@@ -8,7 +8,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -23,25 +25,27 @@
     }
   </style>
 </head>
+
 <body>
   <main>
     <div class="card-container">
       <div class="image-container">
-        <img src="/images/image-equilibrium.jpg" alt="image of equilibrium">
+        <img src="/images/image-equilibrium.jpg" alt="image of equilibrium" id="nft-img">
       </div>
       <div class="text-container">
         <h2>Equilibrium #3429</h2>
         <p>Our Equilibrium collection promotes balance and calm.</p>
       </div>
       <div class="number-container">
-        <img src="/images/icon-ethereum.svg" alt="eth icon">
-        0.041 ETH
-        <img src="/images/icon-clock.svg" alt="clock icon">
-        3 days left
+        <span><img src="/images/icon-ethereum.svg" alt="eth icon">
+          0.041 ETH</span>
+        <span><img src="/images/icon-clock.svg" alt="clock icon">
+          3 days left</span>
+
       </div>
       <div class="profile-container">
         <img src="/images/image-avatar.png" alt="profile pic">
-        <p>Creation of Jules Wyvern</p>
+        <p>Creation of</p><p>Jules Wyvern</p>
       </div>
     </div>
   </main>
@@ -52,4 +56,5 @@
     </div>
   </footer>
 </body>
+
 </html>

@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Outfit', sans-serif;
 }
 
 main {
@@ -29,18 +30,20 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     margin: 1.7rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
-    z-index: 0;
+    border-radius: 1rem;
 }
 
 main .image-container img {
     display: block;
-    width: 100%;
-    height: 100%;
-    border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    transition: all 0.5s linear;
+    margin: auto;
+    width: 85%;
+    height: auto;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+}
+
+h2 {
+    color: white;
 }
 
 .card-container {
@@ -48,4 +51,31 @@ main .image-container img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.text-container {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 0 2rem;
+}
+
+.text-container p {
+    margin: 1rem 0;
+    margin-right: 4rem;
+}
+
+.number-container {
+    display: flex;
+}
+
+.profile-container img {
+    width: 15%;
+}
+
+.profile-container {
+    display: flex;
+}
+
+.profile-container p {
+    margin: auto;
 }
