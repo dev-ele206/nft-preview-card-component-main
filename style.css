@@ -10,6 +10,7 @@
     --text-clr: hsl(215, 51%, 70%);
     --crypto-clr: hsl(178, 100%, 50%);
     --title-name-clr: hsl(0, 0%, 100%);
+    --line-clr: hsl(215, 32%, 27%);
 }
 
 body {
@@ -64,18 +65,41 @@ h2 {
     margin-right: 4rem;
 }
 
-.number-container {
+
+
+#number-container {
     display: flex;
+    padding-bottom: 1.5rem;
+    
 }
+
+#eth-icon {
+    margin-right: 10rem;
+}
+
 
 .profile-container img {
     width: 15%;
 }
 
+#profile-pic {
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
 .profile-container {
+    border-top: 1px solid var(--line-clr);
     display: flex;
+    padding-top: 1.5rem;
+    width: 80%;
+    margin-bottom: 1.5rem;
 }
 
 .profile-container p {
     margin: auto;
+    margin-left: 1.5rem;
+}
+
+#profile-name {
+    color: white;
 }
