@@ -29,8 +29,11 @@
 <body>
   <main>
     <div class="card-container">
-      <div class="image-container">
-        <img src="/images/image-equilibrium.jpg" alt="image of equilibrium" id="nft-img">
+      <div class="image-container card-img">
+        <img src="/images/image-equilibrium.jpg" alt="image of equilibrium" aria-hidden="true">
+        <div class="card-img-overlay">
+          <img src="/images/icon-view.svg">
+        </div>
       </div>
       <div class="text-container">
         <h2>Equilibrium #3429</h2>
@@ -39,7 +42,7 @@
       <div id="number-container">
         <div id="eth-icon">
         <img src="/images/icon-ethereum.svg" alt="eth icon">
-          0.041 ETH
+          <span id="eth-text">0.041 ETH</span>
         </div>
         <div id="timer-icon">
         <img src="/images/icon-clock.svg" alt="clock icon">

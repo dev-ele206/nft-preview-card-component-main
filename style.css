@@ -11,6 +11,7 @@
     --crypto-clr: hsl(178, 100%, 50%);
     --title-name-clr: hsl(0, 0%, 100%);
     --line-clr: hsl(215, 32%, 27%);
+    --hover-state-clr: hsl(178, 100%, 50%);
 }
 
 body {
@@ -47,11 +48,51 @@ h2 {
     color: white;
 }
 
+h2:hover {
+    color: var(--hover-state-clr);
+}
+
 .card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.card-img {
+    margin-bottom: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+
+.card-img-overlay {
+    position: absolute;
+    width: 85%;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 8px;
+}
+
+.card-img:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.card-img:hover {
+    cursor: pointer;
+}
+
+.card-img:hover .card-img-overlay {
+    opacity: 1;
 }
 
 .text-container {
@@ -66,15 +107,18 @@ h2 {
 }
 
 
-
 #number-container {
     display: flex;
     padding-bottom: 1.5rem;
-    
+
 }
 
 #eth-icon {
     margin-right: 10rem;
+}
+
+#eth-text {
+    color: var(--hover-state-clr);
 }
 
 
@@ -102,4 +146,8 @@ h2 {
 
 #profile-name {
     color: white;
+}
+
+#profile-name:hover {
+    color: var(--hover-state-clr);
 }
