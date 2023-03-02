@@ -95,6 +95,10 @@ h2:hover {
     opacity: 1;
 }
 
+#eye-icon {
+    width: 90%;
+}
+
 .text-container {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
